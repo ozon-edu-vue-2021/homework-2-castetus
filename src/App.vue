@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <tree></tree>
+    <navigation></navigation>
   </div>
 </template>
 
 <script>
 import Tree from './components/Tree.vue';
+import Navigation from './components/Navigation.vue';
 
 export default {
   name: 'App',
   components: {
     Tree,
+    Navigation,
   }
 }
 </script>
@@ -28,5 +31,7 @@ li{
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 </style>
